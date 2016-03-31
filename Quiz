@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+  <title>The Ultimate Quiz Challenge</title>
+ </head>
+<body>
+  <div class="container">
+  <h1>Joel's Quiz Challenge</h1>
+<script>
+var correctAnswers = 0;
+
+//First Question
+var firstQuestionAnswer = prompt("How many continents are there?");
+if (firstQuestionAnswer.toLowerCase() === 'seven' || firstQuestionAnswer === '7') {
+  correctAnswers += 1
+}
+
+//Second Question
+var secondQuestionAnswer = prompt("What is the capital of Canada?");
+if (secondQuestionAnswer.toLowerCase() === 'ottawa') {
+  correctAnswers += 1
+}
+
+//Third Question
+var thirdQuestionAnswer = prompt("On which continent is Eqypt located?");
+if (thirdQuestionAnswer.toLowerCase() === 'africa') {
+  correctAnswers += 1
+}
+
+//Fourth Question
+var fourthQuestionAnswer = prompt("What is Darth Vader's birth name?");
+if (fourthQuestionAnswer.toLowerCase() === 'anakin skywalker') {
+  correctAnswers += 1
+}
+
+//Fifth Question
+var fifthQuestionAnswer = prompt("What programming language is named after a jewel?");
+if (fifthQuestionAnswer.toLowerCase() === 'ruby') {
+  correctAnswers += 1
+}
+
+//Final Message telling user how many questions answered
+document.write("<p> You answered " + correctAnswers + " questions correctly.</P>");
+
+if (correctAnswers === 5) {
+  document.write("<p>Congratulations-You've earned the Gold Crown!</p>");
+}
+  else if (correctAnswers >= 3 || correctAnswers === 2) {
+    document.write("<p>You've earned the Silver Crown</p>");
+  }
+  else if (correctAnswers >= 1) {
+    document.write("<p>You've earned the Bronze Crown</p>");
+  }
+    else {
+      document.write("<p>No crown for you! Take the walk of shame!</p>");
+    }
+</script> 
+  </div>
+</body>
+</html>
