@@ -1,0 +1,6 @@
+function getRandomNumber (upper, lower) { 
+if (isNAN(upper) || isNAN(lower)) {
+  throw new ("Argument must be a number");
+return Math.floor(Math.random() * (upper - lower + 1)) + lower; 
+  } 
+}
